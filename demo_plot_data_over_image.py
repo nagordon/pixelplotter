@@ -1,7 +1,5 @@
 # https://matplotlib.org/stable/tutorials/images.html
 import matplotlib.pyplot as pl
-from PIL import Image
-import numpy as np
 import pandas as pd
 
 img = pl.imread("abbott NACA 2412 CL CD.png")
@@ -11,8 +9,6 @@ height, width = img.shape[:2]
 # Coordinates are in (x, y) pixel space
 
 df = pd.read_csv("abbott NACA 2412 CL CD.csv")
-
-
 
 # --- Plot ---
 fig, ax = pl.subplots()
@@ -27,7 +23,6 @@ ax.axis('off')
 ax.set_aspect('equal')
 
 ax.invert_yaxis()
-
 
 ax.legend()
 pl.show()

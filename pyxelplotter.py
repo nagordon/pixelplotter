@@ -1,32 +1,4 @@
 
-
-# Notes and quick tips:
-
-# Use mouse wheel to zoom (pointer-centric zoom keeps cursor over same image coordinate).
-
-# Pan with middle mouse button drag; if you don’t have a middle button, hold Shift and drag with left mouse.
-
-# Click 4 axis points in order X0, X1, Y0, Y1, then type their numeric values into the input boxes.
-
-# After that, click data points; use Plot to preview and Export CSV to save.
-
-# Reset clears everything; Quit exits the app.
-
-# The status bar at the bottom now shows "Pixel: x, y" (image pixel coordinates) and "Calib: X, Y" (calibrated chart coordinates) updated live as the mouse moves.
-
-# Calibrated coordinates appear only when 4 axis points are selected and valid numeric axis values are entered.
-
-# Zoom is pointer-centric (mouse cursor stays over the same image point while zooming). Pan works with middle mouse drag or Shift+Left-drag.
-
-# Each data point selected after calibration is appended to the table with pixel coordinates and calibrated coordinates (if calibration is available).
-
-# Use "Delete Selected" to remove rows, "Clear Table" to remove all, and "Export Table CSV" to save table content (prefers calibrated values if present).
-
-# Table double-click deletes a row and prompts you to reselect the point on the image.
-
-# Zoom/pan refresh the table so calibrated values remain consistent with current calibration entries.
-
-
 __version__ = '0.1'
 __author__ = 'Neal Gordon'
 
@@ -54,7 +26,7 @@ HELP_TEXT = (
 class ChartDigitizer:
     def __init__(self, root):
         self.root = root
-        self.root.title(f"pixelplotter v{__version__}")
+        self.root.title(f"pyxelplotter v{__version__}")
 
         # Menu
         menubar = tk.Menu(root)
